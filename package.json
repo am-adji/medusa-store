@@ -13,9 +13,9 @@
     "medusa"
   ],
   "scripts": {
-    "start": "npx medusa start",
-    "dev": "npx medusa develop",
-    "build": "npx medusa build",
+"dev": "medusa develop",
+  "start": "medusa start",
+  "build": "medusa build",
     "seed": "npx medusa exec ./src/scripts/seed.ts",
     "migrate": "npx medusa db:migrate",
     "test:integration:http": "TEST_TYPE=integration:http NODE_OPTIONS=--experimental-vm-modules jest --silent=false --runInBand --forceExit",
@@ -25,9 +25,8 @@
   "dependencies": {
     "@medusajs/admin": "8.0.0-snapshot-20230824074115",
     "@medusajs/admin-sdk": "2.6.1",
-    "@medusajs/cli": "2.6.1",
     "@medusajs/framework": "2.6.1",
-    "@medusajs/medusa": "^2.6.1",
+    "@medusajs/medusa": "^2.6.139",
     "@mikro-orm/core": "6.4.3",
     "@mikro-orm/knex": "6.4.3",
     "@mikro-orm/migrations": "6.4.3",
