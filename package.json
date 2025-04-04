@@ -13,7 +13,7 @@
     "medusa"
   ],
   "scripts": {
-    "start": "npx medusa start",
+    "start": "node node_modules/@medusajs/medusa/dist/index.js",
     "dev": "npx medusa develop",
     "build": "npx medusa build",
     "seed": "npx medusa exec ./src/scripts/seed.ts",
